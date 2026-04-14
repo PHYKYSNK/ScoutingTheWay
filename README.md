@@ -28,3 +28,10 @@
         
 4.14 :  这个真是cs ，难弄。
         好几个小时，差不多了，又加了专用图片文件夹。嘿嘿！
+
+        再次发现问题，c盘放着不爽，
+        直接给他删了放d盘
+        步骤 ： 
+        1.进入d盘目标文件夹输入
+        git clone git@github.com:PHYKYSNK/ScoutingTheWay.git
+        2.code . (终端路径进入文件夹还得再次打开)
