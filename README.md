@@ -35,3 +35,8 @@
         1.进入d盘目标文件夹输入
         git clone git@github.com:PHYKYSNK/ScoutingTheWay.git
         2.code . (终端路径进入文件夹还得再次打开)
+
+
+
+4.15 :  旷英语在寝室找到了第一个github的项目，（是下载的不是自己写的）。
+        落雪音乐，好用，得自己找音源，但是官方也给有。
