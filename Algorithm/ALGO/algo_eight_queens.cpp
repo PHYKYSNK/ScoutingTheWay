@@ -44,7 +44,7 @@ int main(){
 	cin.tie(nullptr);
 	cin>>n;
 	while(n <= 3) {
-		cout<<"������������ڣ����������� ��"<<endl;
+		cout<<"这种情况不存在，请重新输入 ： "<<endl;
 		cin>>n;
 	}
 	dfs(0);   
