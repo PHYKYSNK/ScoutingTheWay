@@ -1,5 +1,19 @@
 {
     "code-runner.runInTerminal": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "C_Cpp.errorSquiggles": "disabled"
+    "terminal.integrated.shellArgs.windows": ["-NoExit", "/k", "chcp 65001"],
+    "java.compiler.encoding": "UTF-8",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "D:\\JAVA_JDK8\\jdk1.8.0_472",
+            "default": true,
+            "args": ["-Dfile.encoding=UTF-8"]
+        }
+    ],
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac -encoding UTF-8 $fileName && java -Dfile.encoding=UTF-8 $fileNameWithoutExt"
+    }
 }
