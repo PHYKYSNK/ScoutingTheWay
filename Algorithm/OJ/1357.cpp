@@ -12,6 +12,7 @@ void solve() {
     else cout<<"false";
 }
 int main() {
+    cout<<"试试乱码了没？"<<endl;
     string s1,s2;
     cin>>s1>>s2;
     sort(s1.begin(),s1.end());
