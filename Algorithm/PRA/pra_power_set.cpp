@@ -17,7 +17,7 @@ vector<bool> t(N);
 int n;
 
 void dfs(int x) {
-    if(x > n) {
+    if(x == n) {
         cout << "{";
         bool comma = false;
         for(int i=1;i<=n;i++) {
@@ -33,12 +33,13 @@ void dfs(int x) {
     t[x] = false;dfs(x+1);
 }
 void solve() {
+    cout << "输入元素的个数 ： ";
     cin>>n;
-    dfs(0);
+    dfs(1);
 }
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    // ios::sync_with_stdio(false);
+    // cin.tie(nullptr);
     //int _;cin>>_;while(_--)
     solve();
     return 0;

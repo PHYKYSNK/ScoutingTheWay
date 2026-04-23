@@ -15,7 +15,7 @@ typedef pair<int,int> pii;
 
 const int N = 20;
 int n;
-// 起点 -> 中点 -> 权重。
+// 起点 -> 终点 -> 权重。
 vector<vector<pii>> g(N);
 vector<bool> vis(N);
 int relen = 0;

@@ -25,7 +25,7 @@ void dfs(int x) {
     }
     else {
         for(int i=0;i<m;i++) {
-            bool pd = true;
+            bool pd = true;//判断相邻所有有无可选的、
             for(auto& j :a[x]) {
                 if(col[j] == i) {
                     pd = false;
