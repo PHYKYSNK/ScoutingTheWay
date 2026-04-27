@@ -37,3 +37,47 @@
 
 
     vscode使用同理,不多赘述。
+
+
+## 4.27
+浏览器解释vue项目的执行顺序 ： 
+   1. index.html
+   提供页面容器
+   ```
+   <div id="app"></div>
+   ```
+   浏览器把vue项目渲染到id="app"标签中
+
+   2. main.js
+   创建vue实例，把根组件挂载到页面
+   ```
+   import { createApp } from 'vue'
+   import App from './App.vue'
+
+   createApp(App).mount('#app')
+   ```
+   3. App.vue
+   整个项目的最外层页面结构
+   ```
+   <template>
+   <div>
+      <h1>Hello Vue!</h1>
+   </div>
+   </template>
+   ```
+   所有页面内容从这里开始显示
+   4. HelloWorld.vue
+   被调用App.vue调用
+   ```
+   <template>
+   <div>
+      这是子组件内容
+   </div>
+   </template>
+   ```
+
+#### 类比java项目
+index是main函数
+main.js是创建对象（比如创建学生类）
+app.vue是类的属性（比如学生类，包含姓名年龄...）
+
