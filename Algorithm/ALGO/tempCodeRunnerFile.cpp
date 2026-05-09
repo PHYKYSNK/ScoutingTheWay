@@ -1,6 +1,2 @@
-4
-3
-1 4
-1 3
-4 3
-1 4
+os::sync_with_stdio(false);
+    // cin.ti
