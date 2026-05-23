@@ -8,13 +8,12 @@ typedef long long ll;
 
 void solve() {
     ll n;cin>>n;
-    if(n < -1) cout<<"false"<<endl;
-    
+    n = fabs(n);
+    bool pd = ( n & (n-1) );
+    if(!pd) cout << "true" << endl;
+    else cout << "false" << endl;
 }
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    //int _;cin>>_;while(_--)
     solve();
     return 0;
 }

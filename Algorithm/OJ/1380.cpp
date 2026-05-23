@@ -1,3 +1,5 @@
+//沙子题得带上等号。
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -16,9 +18,9 @@ void solve() {
         cnt[t]++;
     }
     for(auto& i : cnt) {
-        if(i.second * 2 > n) {
+        if(i.second * 2 >= n) {
             cout<<i.first<<endl;
-            return ;
+            //return ;
         } 
     }
 }
